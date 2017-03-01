@@ -1,0 +1,20 @@
+{
+    "require": {
+        "symfony/yaml": "2.1.*",
+        "respect/validation": "^1.0",
+        "symfony/routing": "^2.8",
+        "symfony/http-foundation": "^2.8",
+        "symfony/config": "^2.8",
+        "captcha-com/captcha": "^3.0",
+        "claviska/simpleimage": "^3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "controllers": "application/",
+            "models": "application/"
+        },
+        "classmap": [
+            "core/"
+        ]
+    }
+}

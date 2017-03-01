@@ -1,0 +1,7 @@
+# use glob syntax.
+syntax: glob
+
+/composer.phar
+/composer.lock
+/cache/routing
+/vendor

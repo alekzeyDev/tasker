@@ -1,0 +1,30 @@
+index:
+    path:      /
+    defaults:  { _controller: IndexController:actionIndex }
+login:
+    path:      /login
+    defaults:  { _controller: UserController:actionLogin }
+logout:
+    path:      /logout
+    defaults:  { _controller: UserController:actionLogout }
+create:
+    path:      /create
+    defaults:  { _controller: IndexController:actionCreate }
+botdetect:
+    path:      /botdetect.php
+    defaults:  { _controller: UserController:actionBotdetect }
+upload:
+    path:      /upload
+    defaults:  { _controller: IndexController:actionUploadImage }
+next:
+    path:      /next
+    defaults:  { _controller: IndexController:actionNextPage }
+saveText:
+    path:      /save-text
+    defaults:  { _controller: IndexController:actionSaveText }
+successTask:
+    path:      /success-task
+    defaults:  { _controller: IndexController:actionSuccessTask }
+changeSort:
+    path:      /change-sort
+    defaults:  { _controller: IndexController:actionChangeSort }

@@ -1,0 +1,6 @@
+Options -Indexes
+AddDefaultCharset utf-8
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule !\.(js|ico|gif|jpg|jpeg|png|css|pdf|eot|svg|ttf|woff)$ index.php [NC,L]
