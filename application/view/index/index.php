@@ -105,7 +105,7 @@
             <?php
             $models = $this->models;
             foreach ($models as $key => $task):
-                $imgFile = 'uploads\\' . $task->id . '.jpg';
+                $imgFile = 'uploads\\' . $task->image;
                 ?>
                 <li class="list-group-item">
                     <div class="row">

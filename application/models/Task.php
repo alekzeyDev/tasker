@@ -35,6 +35,12 @@ class Task extends \Model
                 'trim',
             ],
         ],
+        'image'    => [
+            'validators' => [
+                'stringType',
+                'notEmpty',
+            ],
+        ],
     ];
 
 }

@@ -45,8 +45,6 @@ class IndexController extends \Controller {
         $firstTask = $firstTask < 0 ? 0 : $firstTask;
         $query = new \Db();
         $query->query("SELECT * FROM task $where $whereText $and $whereStatus ORDER BY $sortName $sort LIMIT $firstTask, $countOnPage");
-        
-//        print_r("SELECT * FROM task $where $whereText $and $whereStatus ORDER BY $sortName $sort LIMIT $firstTask, $countOnPage") ;exit;
         $this->view->models = $query->results();
         $this->view->content = $this->view->render('/index/index');
     }
@@ -71,7 +69,7 @@ class IndexController extends \Controller {
                 $targetFolder = '\..\..\public_html\uploads\\';
                 $targetPath = dirname(__FILE__) . '/' . $targetFolder;
                 $targetFile = rtrim($targetPath, '/') . '/' . $name . '.' . $fileParts['extension'];
-
+                $model->update($name, ['image'=>$name . '.' . $fileParts['extension']]);
                 if (in_array($fileParts['extension'], $fileTypes)) {
                     try {
                         $image = new SimpleImage();
