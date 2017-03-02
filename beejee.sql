@@ -13,6 +13,7 @@ CREATE TABLE `task` (
   `email` varchar(100) NOT NULL DEFAULT '',
   `text` text,
   `status` enum('new','success') NOT NULL DEFAULT 'new',
+  `image` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `status` (`status`),
   KEY `author` (`author`),
@@ -33,4 +34,4 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `login`, `password`, `email`, `fio`) VALUES
 (1,	'admin',	'202cb962ac59075b964b07152d234b70',	'agentran@gmail.com',	'Ивашко Алексей Алексеевич');
 
--- 2017-03-01 17:21:00
+-- 2017-03-02 07:23:11
